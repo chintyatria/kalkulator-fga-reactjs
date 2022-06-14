@@ -50,21 +50,28 @@ equalSign.addEventListener('click', () => {
 
 const calculate = () => {
     let result = ''
+    // var pangkat = Math.pow(currentNumber);
     switch (calculationOperator) {
-        case "+":
-            result = parseFloat(prevNumber) + parseFloat(currentNumber)            
-            break;
-        case "-":
-            result = parseFloat(prevNumber) - parseFloat(currentNumber)            
-            break;
-        case "*":
-            result = parseFloat(prevNumber) * parseFloat(currentNumber)            
-            break;
-        case "/":
-            result = parseFloat(prevNumber) / parseFloat(currentNumber)            
-            break;
-        default:
-            break;
+      case "+":
+        result = parseFloat(prevNumber) + parseFloat(currentNumber);
+        break;
+      case "-":
+        result = parseFloat(prevNumber) - parseFloat(currentNumber);
+        break;
+      case "*":
+        result = parseFloat(prevNumber) * parseFloat(currentNumber);
+        break;
+      case "/":
+        result = parseFloat(prevNumber) / parseFloat(currentNumber);
+        break;
+      case "%":
+        result = parseFloat(prevNumber) % parseFloat(currentNumber);
+        break;
+      case "n":
+        result = parseFloat(prevNumber) ** parseFloat(currentNumber);
+        break;
+      default:
+        break;
     }
     currentNumber = result
     calculationOperator = ''

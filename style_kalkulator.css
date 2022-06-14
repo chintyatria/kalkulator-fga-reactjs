@@ -21,7 +21,7 @@
 .row{
     display: flex;
 }
-button{
+.kalkulator button{
     height: 80px;
     background-color: gray;
     border: 1px solid black;
@@ -31,12 +31,15 @@ button{
     outline: none;
 }
 .hps-semua, .zero-btn{
-    width: 50%;
+    width: 25%;
 }
 .operator, .equal-sign{
     background-color: orange;
 }
-button:hover{
+.equal-sign{
+    width: 50%;
+}
+.kalkulator button:hover{
     background-color: darkgray;
 }
 .operator:hover, .equal-sign:hover{
